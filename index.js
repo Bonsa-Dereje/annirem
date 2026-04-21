@@ -16,7 +16,7 @@ function sendReminder(day) {
         bot.sendMessage(chatId, "TOMORROW IS ANNIVERSARY. Any plans for the big day?");
     }
 
-    if (day === 19) {
+    if (day === 21) {
         bot.sendMessage(chatId, "TODAY IS THE DAY. Everything ready?");
     }
 }
@@ -41,7 +41,7 @@ function updateSchedule() {
         intervalTime = 2 * 60 * 60 * 1000; // 2 hours
     } 
     else if (day === 19) {
-        intervalTime = 1 * 60 * 60 * 1000; // 1 hour
+        intervalTime = 1 * 60; // 1 hour
     }
 
     if (intervalTime) {
