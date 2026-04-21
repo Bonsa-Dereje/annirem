@@ -34,13 +34,13 @@ function updateSchedule() {
 
     let intervalTime = null;
 
-    if (day === 17) {
+    if (day === 21) {
         intervalTime = 3 * 60 * 60 * 1000; // 3 hours
     } 
-    else if (day === 18) {
+    else if (day === 22) {
         intervalTime = 2 * 60 * 60 * 1000; // 2 hours
     } 
-    else if (day === 19) {
+    else if (day === 23) {
         intervalTime = 1 * 60 * 60 * 1000; // 1 hour
     }
 
