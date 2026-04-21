@@ -8,15 +8,15 @@ let messageInterval = null;
 
 // Function that sends the correct message
 function sendReminder(day) {
-    if (day === 17) {
+    if (day === 21) {
         bot.sendMessage(chatId, "2 DAYS BEFORE ANNIVERSARY. Have you written a longgg text yet?");
     }
 
-    if (day === 18) {
+    if (day === 22) {
         bot.sendMessage(chatId, "TOMORROW IS ANNIVERSARY. Any plans for the big day?");
     }
 
-    if (day === 19) {
+    if (day === 23) {
         bot.sendMessage(chatId, "TODAY IS THE DAY. Everything ready?");
     }
 }
