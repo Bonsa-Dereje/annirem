@@ -9,15 +9,24 @@ let messageInterval = null;
 // Function that sends the correct message
 function sendReminder(day) {
     if (day === 17) {
-        bot.sendMessage(chatId, "2 DAYS BEFORE ANNIVERSARY. Have you written a longgg text yet?");
+        bot.sendMessage(
+            chatId,
+            "2 DAYS BEFORE ANNIVERSARY. Have you written a longgg text yet?"
+        );
     }
 
     if (day === 18) {
-        bot.sendMessage(chatId, "TOMORROW IS ANNIVERSARY. Any plans for the big day?");
+        bot.sendMessage(
+            chatId,
+            "TOMORROW IS ANNIVERSARY. Any plans for the big day?"
+        );
     }
 
     if (day === 19) {
-        bot.sendMessage(chatId, "TODAY IS THE DAY. Everything ready?");
+        bot.sendMessage(
+            chatId,
+            "TODAY IS THE DAY. Everything ready?"
+        );
     }
 }
 
@@ -34,14 +43,19 @@ function updateSchedule() {
 
     let intervalTime = null;
 
+    // 17th -> every 6 hours
     if (day === 17) {
-        intervalTime = 3 * 60 * 60 * 1000; // 3 hours
-    } 
+        intervalTime = 6 * 60 * 60 * 1000;
+    }
+
+    // 18th -> every 4 hours
     else if (day === 18) {
-        intervalTime = 2 * 60 * 60 * 1000; // 2 hours
-    } 
+        intervalTime = 4 * 60 * 60 * 1000;
+    }
+
+    // 19th -> every 3 hours
     else if (day === 19) {
-        intervalTime = 1 * 60 * 60 * 1000; // 1 hour
+        intervalTime = 3 * 60 * 60 * 1000;
     }
 
     if (intervalTime) {
